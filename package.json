@@ -1,0 +1,37 @@
+{
+  "name": "website",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check": "svelte-check --tsconfig ./tsconfig.app.json && tsc -p tsconfig.node.json"
+  },
+  "devDependencies": {
+    "@sveltejs/adapter-auto": "^3.0.0",
+    "@sveltejs/vite-plugin-svelte": "^5.0.3",
+    "@tailwindcss/typography": "^0.5.14",
+    "@tsconfig/svelte": "^5.0.4",
+    "@types/node": "^22.13.8",
+    "autoprefixer": "^10.4.20",
+    "bits-ui": "^0.22.0",
+    "clsx": "^2.1.1",
+    "mdsvex": "^0.11.0",
+    "svelte": "^5.20.2",
+    "svelte-check": "^4.1.4",
+    "tailwind-merge": "^3.0.2",
+    "tailwind-variants": "^0.3.1",
+    "tailwindcss": "^3.4.9",
+    "typescript": "~5.7.2",
+    "vite": "^6.0.0"
+  },
+  "dependencies": {
+    "@sveltejs/adapter-static": "^3.0.8",
+    "class-variance-authority": "^0.7.1",
+    "lucide-svelte": "^0.477.0",
+    "shadcn-svelte": "^0.14.0",
+    "svelte-routing": "^2.13.0"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "baseUrl": ".",
+    "paths": {
+      "$lib/*": ["./src/lib/*"],
+      "$lib/components/*": ["./src/lib/components/*"],
+      "$lib/utils/*": ["./src/lib/utils/*"]
+    }
+  },
+  "files": [],
+  "references": [
+    { 
+      "path": "./tsconfig.app.json",
+      "composite": true
+    },
+    { 
+      "path": "./tsconfig.node.json",
+      "composite": true,
+      "emit": true
+    }
+  ]
+}
