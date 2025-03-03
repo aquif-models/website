@@ -7,7 +7,9 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "check": "svelte-check --tsconfig ./tsconfig.app.json && tsc -p tsconfig.node.json"
+    "check": "svelte-check --tsconfig ./tsconfig.app.json && tsc -p tsconfig.node.json",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
     "@sveltejs/adapter-auto": "^3.0.0",
@@ -18,6 +20,7 @@
     "autoprefixer": "^10.4.20",
     "bits-ui": "^0.22.0",
     "clsx": "^2.1.1",
+    "gh-pages": "^6.3.0",
     "mdsvex": "^0.11.0",
     "svelte": "^5.20.2",
     "svelte-check": "^4.1.4",
@@ -33,5 +36,6 @@
     "lucide-svelte": "^0.477.0",
     "shadcn-svelte": "^0.14.0",
     "svelte-routing": "^2.13.0"
-  }
+  },
+  "homepage": "https://aquif-models.github.io/website"
 }
