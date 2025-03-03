@@ -5,11 +5,15 @@
     <title>Redirecting...</title>
     <script>
       const path = window.location.pathname;
-      sessionStorage.redirect = path;
-      window.location.replace('/#' + path);
+      if (path !== '/') {
+        sessionStorage.redirect = path;
+        window.location.replace('/#' + path);
+      } else {
+        window.location.replace('/');
+      }
     </script>
   </head>
   <body>
-    let's get you there...
+    Redirecting...
   </body>
 </html> 
