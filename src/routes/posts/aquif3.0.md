@@ -21,7 +21,7 @@ Compared to multi-trillion parameter models, such as GPT 4.5, it certainly isn't
 
 Everyone loves benchmarks... It gives us a glimpse of what models are better at numerically, and aquif-3.0-preview-1 is almost there, that's awesome! In OCRBench, a benchmark for vision models (yep, we got a 2b vision model), preview-1 STOMPS Meta's Llama 3.2 **11B** vision model. That's crazy! Just look at the graph:
 
-![aquif-3.0 benchmark comparison graph](../../assets/3.0-preview-1-vision.png)
+![aquif-3.0 benchmark comparison graph](/3.0-preview-1-vision.png)
 
 *aquif-3.0-preview-1 vs Llama 3.2 11B and others on multiple benchmarks*
 
