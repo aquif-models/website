@@ -35,7 +35,7 @@
         <h2>Benchmaaaaaarks</h2>
         <p>Everyone loves benchmarks... It gives us a glimpse of what models are better at numerically, and aquif-3.0-preview-1 is almost there, that's awesome! In OCRBench, a benchmark for vision models (yep, we got a 2b vision model), preview-1 STOMPS Meta's Llama 3.2 <strong>11B</strong> vision model. That's crazy! Just look at the graph:</p>
         <figure>
-            <img src="/assets/3.0-preview-1-vision.png" alt="aquif-3.0 benchmark comparison graph" class="w-full max-w-3xl mx-auto" />
+            <img src="../../assets/3.0-preview-1-vision.png" alt="aquif-3.0 benchmark comparison graph" class="w-full max-w-3xl mx-auto" />
             <figcaption class="text-center mt-2 text-sm text-gray-400">aquif-3.0-preview-1 vs Llama 3.2 11B and others on multiple benchmarks</figcaption>
         </figure>
         <br>
