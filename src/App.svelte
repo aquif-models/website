@@ -7,6 +7,18 @@
     import BlogPost from './routes/BlogPost.svelte';
     let theme = 'system';
 
+    let currentPath = window.location.hash.slice(1) || '/';
+    if (sessionStorage.redirect) {
+        currentPath = sessionStorage.redirect;
+        sessionStorage.removeItem('redirect');
+    }
+
+    function handleHashChange() {
+        currentPath = window.location.hash.slice(1) || '/';
+    }
+
+    window.addEventListener('hashchange', handleHashChange);
+
     function applyTheme() {
         document.documentElement.classList.remove('light', 'dark');
         if (theme === 'system') {
@@ -25,7 +37,7 @@
     applyTheme();
 </script>
 
-<Router>
+<Router url={currentPath}>
     <div class="flex flex-col min-h-screen bg-background">
         <header class="p-4 border-b">
             <div class="container flex items-center justify-between">

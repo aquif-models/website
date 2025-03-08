@@ -4,8 +4,13 @@
     <meta charset="utf-8" />
     <title>Redirecting...</title>
     <script>
-      sessionStorage.redirect = location.href;
-      location.replace('/');
+      const path = window.location.pathname;
+      if (path !== '/') {
+        sessionStorage.redirect = path;
+        window.location.replace('/#' + path);
+      } else {
+        window.location.replace('/');
+      }
     </script>
   </head>
   <body>
