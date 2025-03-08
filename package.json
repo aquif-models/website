@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && cp -r static/* dist/",
+    "build": "vite build && cp static/404.html dist/ && cp static/.htaccess dist/ && cp static/.nojekyll dist/",
     "preview": "vite preview",
     "check": "svelte-check --tsconfig ./tsconfig.app.json && tsc -p tsconfig.node.json",
     "predeploy": "npm run build",
